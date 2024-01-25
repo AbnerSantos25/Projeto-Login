@@ -1,8 +1,13 @@
 @charset "UTF-8";
-
+:root{
+    --colorBotao: rgba(12, 150, 92, 0.884);
+    --colorBotaoH: rgb(103, 218, 26);
+    --campo:rgb(3, 71, 43);
+    --color-input: rgb(181, 248, 187);
+}   
 @media screen and (min-width: 768px) and (max-width:992px){
     body{
-        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+        background-image: linear-gradient(to top, var(--colorBotao), var(--color-input));
     }
     section#login{
         width: 80vw;
