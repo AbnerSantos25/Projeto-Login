@@ -13,7 +13,7 @@
 }
 
 body, html{
-    background-color: rgb(115, 169, 98);
+    background-color: rgb(3, 161, 101);
     width: 100vw;
     height: 100vh;
 }
@@ -29,16 +29,16 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden; 
     /* esconder o que esta de fora da div, codigo acima */
 
     background-color: white;
-    width: 320px;
-    height: 500px;
+    width: 370px;
+    height: 580px;
     border-radius: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.616);
 
+    transform: translate(-50%, -50%);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
 }
@@ -49,7 +49,15 @@ section#login div#imagem{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 200px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+section#login h1{
+    font-size: 2em;
+}
+div#formulario > p{
+    font-size: 1em;
 }
 
 section#login > div#formulario{
@@ -60,10 +68,6 @@ section#login > div#formulario{
 div#formulario{
     text-align: center;
     margin-bottom: 10px;
-}
-
-div#formulario > p{
-    font-size: 0.9em;
 }
 
 form > div.campo{
@@ -91,6 +95,8 @@ div.campo > input{
     border-radius: 8px;
     transform: translateY(-11px);
 }
+
+
 
 form label{
     display: none;
